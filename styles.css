@@ -1,0 +1,186 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Style for speech-to-text button */
+#speechToTextButton {
+    background-color: #ff5722;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#speechToTextButton:hover {
+    background-color: #e64a19;
+}
+
+#speechToTextButton i {
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h2, select, textarea, button, pre {
+    margin-bottom: 20px;
+}
+
+/* Center the language select dropdown */
+#targetLanguage {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Input text area for manual text */
+textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Text display areas */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Image preview container */
+#imagePreviewContainer {
+    text-align: center;
+}
+
+#imagePreview {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox for translated text and speak button */
+.translated-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the icon button */
+#speakTranslatedTextButton {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#speakTranslatedTextButton:hover {
+    background-color: #45a049;
+}
+
+#speakTranslatedTextButton i {
+    font-size: 20px;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #targetLanguage {
+        width: 80%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+
+    #speakTranslatedTextButton {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
